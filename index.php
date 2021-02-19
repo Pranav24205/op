@@ -323,12 +323,178 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
   <hr>
 
   <!-- Contact Section -->
-<style type="text/css">
-.contact-form-widget{margin-left:auto;margin-right:auto;width:600px;max-width:100%;padding:40px 0}.contactf-name,.contactf-email{float:left;width:48.25%}.contactf-name{margin-right:3.5%}.contact-form-name,.contact-form-email,.contact-form-email-message,.contact-form-name:hover,.contact-form-name:focus,.contact-form-email:hover,.contact-form-email:focus,.contact-form-email-message:hover,.contact-form-email-message:focus{width:100%;max-width:100%;margin:0 0 20px;padding:10px 15px;font-size:12px;letter-spacing:1px;color:#444;background:#F3F3F3;border:medium none;-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none}.contact-form-name,.contact-form-email{height:37px}.contact-form-email-message{height:170px}.contact-form-button-submit,.contact-form-button-submit:hover{width:13%;height:30px;font:normal 12px Arial;letter-spacing:1px;color:#444;display:block;outline:none;margin-bottom:20px;text-align:center;background:#E6E6E6;border:0;cursor:pointer}.contact-form-button-submit:active{outline:none;-webkit-box-shadow:none;box-shadow:none}.contact-form-cross{border:medium none!important;box-shadow:none!important;padding:0!important;height:11px !important;width:11px !important;}
-</style>
+<div id="contact">
+ <p id="contact_label">Let's Connect</p>
+ <form method="post" action="">
+  <p><input type="text" placeholder="Your Name"></p>
+  <p><input type="text" placeholder="Your Email"></p>
+  <p><input type="text" placeholder="Your Contact No"></p>
+  <p><textarea placeholder="Your Words"></textarea></p>
+  <p><input type="submit" value="SUBMIT"></p>
+ </form>
+</div>  
+<style>
+body
+{
+ margin:0 auto;
+ padding:0px;
+ text-align:center;
+ width:100%;
+ font-family: "Myriad Pro","Helvetica Neue",Helvetica,Arial,Sans-Serif;
+ background-color:#AED6F1;
+}
+#wrapper
+{
+ margin:0 auto;
+ padding:0px;
+ text-align:center;
+ width:995px;	
+}
+#wrapper h1
+{
+ margin-top:50px;
+ font-size:45px;
+ color:#1B4F72;
+}
+#wrapper h1 p
+{
+ font-size:18px;
+}
+#contact_form_div
+{
+ width:330px;
+ margin-left:320px;
+ padding:10px;
+ background-color:#1B4F72;
+}
+#contact_form_div #contact_label
+{
+ margin:15px;
+ margin-bottom:30px;
+ font-size:25px;
+ font-weight:bold;
+ color:white;
+ text-decoration:underline;
+}
+#contact_form_div input[type="text"]
+{
+ width:230px;
+ height:40px;
+ border-radius:2px;
+ font-size:17px;
+ padding-left:5px;
+ border:none;
+}
+#contact_form_div textarea
+{
+ width:230px;
+ height:70px;
+ border-radius:2px;
+ font-size:17px;
+ padding5px;
+}
+#contact_form_div input[type="submit"]
+{
+ width:230px;
+ height:40px;
+ border:none;
+ border-radius:2px;
+ font-size:17px;
+ background-color:#85C1E9;
+ border-bottom:3px solid #3498DB;
+ color:#1B4F72;
+ font-weight:bold;
+}
 
-<div class="widget ContactForm" id="ContactForm22"><div class="contact-form-widget"><div class="form"><form name="contact-form"><div class="contactf-name"><input class="contact-form-name" id="ContactForm1_contact-form-name" name="name" size="30" type="text" value="NAME" onblur='if (this.value == "") {this.value = "NAME";}' onfocus='if (this.value == "NAME") {this.value = "";}'  /></div><div class="contactf-email"><input class="contact-form-email" id="ContactForm1_contact-form-email" name="email" size="30" type="text" value="EMAIL" onblur='if (this.value == "") {this.value = "EMAIL";}' onfocus='if (this.value == "EMAIL") {this.value = "";}'/></div><div style="clear:both"></div><div class="contactf-message"><textarea class="contact-form-email-message" cols="25" id="ContactForm1_contact-form-email-message" name="email-message" rows="5" value="MESSAGE" onblur='if (this.value == "") {this.value = "MESSAGE";}' onfocus='if (this.value == "MESSAGE") {this.value = "";}'></textarea></div><input class="contact-form-button contact-form-button-submit" id="ContactForm1_contact-form-submit" type="button" value="SEND" /><div class="contact-form-error-message" id="ContactForm1_contact-form-error-message"></div><div class="contact-form-success-message" id="ContactForm1_contact-form-success-message"></div></form></div></div></div>
-  
+@media only screen and (min-width:700px) and (max-width:995px)
+{
+ #wrapper
+ {
+  width:100%;
+ }
+ #wrapper h1
+ {
+  font-size:30px;
+ }
+ #contact_form_div
+ {
+  width:50%;
+  margin-left:25%;
+  padding-left:0px;
+  padding-right:0px;
+ }
+ #contact_form_div input[type="text"]
+ {
+  width:80%;
+ }
+ #contact_form_div textarea
+ {
+  width:80%;
+ }
+ #contact_form_div input[type="submit"]
+ {
+  width:80%;
+ }
+}
+@media only screen and (min-width:400px) and (max-width:699px)
+{
+ #wrapper
+ {
+  width:100%;
+ }
+ #wrapper h1
+ {
+  font-size:30px;
+ }
+ #contact_form_div
+ {
+  width:60%;
+  margin-left:20%;
+ }
+ #contact_form_div input[type="text"]
+ {
+  width:80%;
+ }
+ #contact_form_div textarea
+ {
+  width:80%;
+ }
+ #contact_form_div input[type="submit"]
+ {
+  width:80%;
+ }
+}
+@media only screen and (min-width:100px) and (max-width:399px)
+{
+ #wrapper
+ {
+  width:100%;
+ }
+ #wrapper h1
+ {
+  font-size:25px;
+ }
+ #contact_form_div
+ {
+  width:90%;
+  margin-left:5%;
+  padding-left:0px;
+  padding-right:0px;
+ }
+ #contact_form_div input[type="text"]
+ {
+  width:80%;
+ }
+ #contact_form_div textarea
+ {
+  width:80%;
+ }
+ #contact_form_div input[type="submit"]
+ {
+  width:80%;
+ }
+}
+</style>
 <!-- End page content -->
 </div>
 
