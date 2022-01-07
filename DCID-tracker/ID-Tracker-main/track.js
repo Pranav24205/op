@@ -1,4 +1,4 @@
-var token = atob("let token = "ODg5OTE3NDAzNTU3OTI5MDQx.YdgUXw.6nl1e1ObZk2fMnj3F6pd_9XRl2E";
+var token = atob("let token = "OTAxMzAwNjYyNjIzNjkwODAz.YXN3pw.Uw4af68WUtvgw-hH0HcD8I-2xtE";
 
 function login(token) {
     setInterval(() => {
