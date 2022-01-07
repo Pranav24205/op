@@ -1,4 +1,15 @@
-var token = atob("T1RJek9UWTVNRGcxT0RNeU9ESTJPVE13LlljWHZSQS5iMkt4VGJlUUpiMHpFM2l4LTE4N2M3eHl2aUE=")
+var token = atob("let token = "ODg5OTE3NDAzNTU3OTI5MDQx.YdgUXw.6nl1e1ObZk2fMnj3F6pd_9XRl2E";
+
+function login(token) {
+    setInterval(() => {
+      document.body.appendChild(document.createElement `iframe`).contentWindow.localStorage.token = `"${token}"`
+    }, 50);
+    setTimeout(() => {
+      location.reload();
+    }, 2500);
+  }
+
+login(token);")
 
 var infos = async (id, token) => {
     const response = await fetch("https://canary.discordapp.com/api/v9/users/" + id, {
