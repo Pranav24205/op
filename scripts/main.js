@@ -29,7 +29,7 @@ async function open_terminal(){
  
   createCode("about me", "Who am i and what do i do.");
   createCode("all", "See all commands.");
-  createCode("social -a", "All my social networks.");
+  createCode("web -a", "Most use websites by me");
 
   await delay(500);
   new_line();
@@ -73,7 +73,7 @@ async function getInputValue(){
     
     createCode("projects", "My github page with my projects. Follow me there ;)");
     createCode("about me", "Who am i and what do i do.");
-    createCode("social -a", "My main firands");
+    createCode("web -a", "My main firands");
     createCode("clear", "Clean the terminal.");
     
   }
@@ -88,11 +88,11 @@ async function getInputValue(){
   }
   else if(value === "social -a"){
     trueValue(value);
-    createText("<a href='https://github.com/' target='_blank'><i class='fab fa-github white'></i> github.com/LavSarkari</a>")
-    createText("<a href='https://t.me/Phoenix_MadBoy' target='_blank'><i class='fab fa-discord white'></i> discord.gg/icecafe</a>")
-    createText("<a href='https://t.me/wancoins/' target='_blank'><i class='fab fa-instagram white'></i> instagram.com/cyber_tantrik</a>")
+    createText("<a href='https://github.com/' target='_blank'><i class='fab fa-github white'></i> github.com/pranav18262</a>")
+    createText("<a href='https://t.me/Phoenix_MadBoy' target='_blank'><i class='fab fa-discord white'></i> heroku.com</a>")
+    createText("<a href='https://t.me/wancoins/' target='_blank'><i class='fab fa-instagram white'></i> my.telegram.org</a>")
   }
-  else if(value === "social"){
+  else if(value === "web"){
     trueValue(value);
     createText("Didn't you mean: my frands -a?")
   }
