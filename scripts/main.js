@@ -44,7 +44,7 @@ function new_line(){
   p.setAttribute("class", "path")
   p.textContent = "# user";
   span1.textContent = " in";
-  span2.textContent = " ~/LavSarkari";
+  span2.textContent = " ~/Pranav "_"";
   p.appendChild(span1);
   p.appendChild(span2);
   app.appendChild(p);
