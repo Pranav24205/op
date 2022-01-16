@@ -21,7 +21,7 @@ app.addEventListener("click", function(event){
 
 
 async function open_terminal(){
-  createText("Welcome");
+  createText("Welcome to My Vlog Web");
   await delay(700);
   createText("Starting the server...");
   await delay(1500);
@@ -73,28 +73,28 @@ async function getInputValue(){
     
     createCode("projects", "My github page with my projects. Follow me there ;)");
     createCode("about me", "Who am i and what do i do.");
-    createCode("social -a", "All my social networks.");
+    createCode("social -a", "My main firands");
     createCode("clear", "Clean the terminal.");
     
   }
   else if(value === "projects"){
     trueValue(value);
-    createText("<a href='https://github.com/LavSarkari' target='_blank'><i class='fab fa-github white'></i> github.com/LavSarkari</a>")
+    createText("<a href='https://github.com/pranav18262' target='_blank'><i class='fab fa-github white'></i> github.com/LavSarkari</a>")
   }
   else if(value === "about me"){
     trueValue(value);
-    createText("Hi, My Name is Lav Sarkari ;)")
-    createText("I'm just a regular human trying to figure out everything! Basicly, I'm a student who is passionate about ethical hacking. I'm also a technophile. ")
+    createText("Hi, My Name is Pranav  ;)")
+    createText("I'm just a Human Who have many frands. Love python | Telegram | Bot ")
   }
   else if(value === "social -a"){
     trueValue(value);
-    createText("<a href='https://github.com/LavSarkari/' target='_blank'><i class='fab fa-github white'></i> github.com/LavSarkari</a>")
-    createText("<a href='https://discord.gg/icecafe/' target='_blank'><i class='fab fa-discord white'></i> discord.gg/icecafe</a>")
-    createText("<a href='https://www.instagram.com/cyber_tantrik/' target='_blank'><i class='fab fa-instagram white'></i> instagram.com/cyber_tantrik</a>")
+    createText("<a href='https://github.com/' target='_blank'><i class='fab fa-github white'></i> github.com/LavSarkari</a>")
+    createText("<a href='https://t.me/Phoenix_MadBoy' target='_blank'><i class='fab fa-discord white'></i> discord.gg/icecafe</a>")
+    createText("<a href='https://t.me/wancoins/' target='_blank'><i class='fab fa-instagram white'></i> instagram.com/cyber_tantrik</a>")
   }
   else if(value === "social"){
     trueValue(value);
-    createText("Didn't you mean: social -a?")
+    createText("Didn't you mean: my frands -a?")
   }
   
   else if(value === "clear"){
